@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+	//Resultado foi:
+
+<script>
+//
+	function pulaLinha(){
+		document.write("<br>");
+	}
+
+	function mostra(frase){
+		pulaLinha();
+		document.write(frase);
+	}
+//
+	var caraOuCoroa = ["Cara", "Coroa"];
+
+	var indice = Math.floor(Math.random() * caraOuCoroa.length);
+
+	var resultado = caraOuCoroa[indice]
+//
+	var aposta = prompt("Cara ou Coroa? ")
+		if (aposta == resultado) {
+			mostra("Voce ganhou! ")
+		} else {
+			mostra("Voce Errou!!!!! ")
+			mostra("a resposta foi " + resultado + "!!!!!")
+		}
+
+</script>
